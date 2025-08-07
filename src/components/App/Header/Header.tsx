@@ -14,6 +14,7 @@ const Header = () => {
                     <img className="header__logo" src={image_logo_1} alt="App logo" />
                 </Link>     
                 <NavigationBar list={routesRight} />
+                
             </div>
         </header>
     )
