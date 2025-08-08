@@ -2,7 +2,7 @@ import './Footer.css'
 import radware_logo from '../../../assets/images/radware_logo.svg'
 import RAD_logo from '../../../assets/images/RAD_logo.jpg'
 import { Link } from 'react-router-dom' 
-import { Button, Typography } from '@mui/material'
+import { Button } from '@mui/material'
 
 const Footer = () => {
     return (
@@ -30,16 +30,18 @@ const Footer = () => {
                         </li>
                         <li className="footer__text-wrapper-links-item">
                             <Link to="/cookie-settings">
-                                <Typography variant="body1" color="secondary" >Cookie Settings</Typography>
+                                <p className="footer__text">Cookie Settings</p>
                             </Link>
                         </li>
                     </ul>
-                    <Button variant="outlined" color="secondary">
-                        Contact Us
-                    </Button>
+                    <Link to="/contact-us">
+                        <Button variant="outlined" color="secondary">
+                            Contact Us
+                        </Button>
+                    </Link>
                     <div className="footer__text-wrapper-text">
-                        <Typography variant="body1" color="secondary" >All rights reserved</Typography>
-                        <Typography variant="body1" color="secondary" >© 2025 Ziv and Or Project</Typography>
+                        <p className="footer__text">All rights reserved</p>
+                        <p className="footer__text">© 2025 Ziv and Or Project</p>
                     </div>
                 </div>
         </footer>

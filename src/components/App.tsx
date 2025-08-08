@@ -4,6 +4,8 @@
   import { Routes, Route } from 'react-router-dom'
   import { routesLeft, routesRight } from '../utils/routes'
   import Footer from './App/Footer/Footer'
+  import Gallery from "./App/Main/Gallery/Gallery";
+  import Main from "./App/Main/Main";
   // import HomePage from './App/Pages/HomePage'
   // import AboutPage from './App/Pages/AboutPage'
   // import ResidentialPage from './App/Pages/ResidentialPage'
@@ -16,7 +18,6 @@
         <div className="app">
           <div className="app__wrapper">
             <Header />
-            <main className="main">
               <Routes>
                 {/* <Route path={routesLeft[0].path} element={<HomePage />} />
                 <Route path={routesLeft[1].children[0].path} element={<WelcomePage />} />
@@ -30,7 +31,7 @@
                 <Route path={routesRight[2].path} element={<RetailPage />} />
                 <Route path={routesRight[3].path} element={<ContactsPage />} /> */}
               </Routes>
-            </main>
+              <Main />
             <Footer />
           </div>
         </div>
