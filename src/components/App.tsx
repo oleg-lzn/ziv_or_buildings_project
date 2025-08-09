@@ -2,9 +2,7 @@
   import './App.css'
   import Header from './App/Header/Header'
   import { Routes, Route } from 'react-router-dom'
-  import { routesLeft, routesRight } from '../utils/routes'
   import Footer from './App/Footer/Footer'
-  import Gallery from "./App/Main/Gallery/Gallery";
   import Main from "./App/Main/Main";
   // import HomePage from './App/Pages/HomePage'
   // import AboutPage from './App/Pages/AboutPage'

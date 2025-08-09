@@ -3,6 +3,7 @@ import VideoContainer from "./VideoContainer/VideoContainer";
 import CardsList from "./Cards/CardsList";
 import cards from "../../../utils/cards";
 import "./Main.css";
+import HistoryBlock from "./HistoryBlock/Historyblock";
 
 const Main = () => {
   return (
@@ -10,8 +11,8 @@ const Main = () => {
       <VideoContainer />
         <h1 className="main__text-title"> Visit Ziv and Or Buildings </h1> 
         <CardsList cards={cards} />
+      <HistoryBlock />
       <Gallery />
-      
     </main>
   );
 };

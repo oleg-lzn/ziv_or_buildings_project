@@ -10,6 +10,7 @@
   position: relative;
   padding: 10px 0;
   margin: 0 10px;
+  font-family: "Cabinet Grotesk", sans-serif;
 }
 
 .navigation__bar_item_dropdown {
@@ -18,9 +19,10 @@
 }
 
 .navigation__bar_item_dropdown_open {
+  font-family: "Cabinet Grotesk", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -29,6 +31,9 @@
   list-style: none;
   white-space: nowrap;
   margin: 0;
+  z-index: 100;
+  width: 150px;
+  align-items: flex-start;
 }
 
 .navigation__bar_item_link {

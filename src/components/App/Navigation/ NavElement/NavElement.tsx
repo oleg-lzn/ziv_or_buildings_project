@@ -18,7 +18,7 @@ const NavElement = ({ item }) => {
        {hasChildren && (
         <ul className={`navigation__bar_item_dropdown ${isOpen ? "navigation__bar_item_dropdown_open" : ""}`}>    
           {item.children.map((child, idx) => (
-            <li key={idx} className="navigation__bar_item_link">
+            <li key={idx}>
               <Link to={child.path} className="navigation__bar_item_link">{child.name}</Link>
             </li>
           ))}
